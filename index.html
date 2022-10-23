@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="-skew-y-12 -translate-y-60 bg-gradient-to-r from-yellow h-mediumh md:h-screen relative to-indigo transform via-pink">
+<body class="overflow-x-hidden">
+    <div class="-skew-y-12 -translate-y-60 bg-gradient-to-r from-yellow h-mediumh md:h-screen relative to-indigo transform via-pink ">
         <nav class="bg-transparent container flex items-center justify-between mx-auto p-5 skew-y-12 text-white transform translate-y-60 w-10/12">
             <a href="#" class=" text-2xl font-extrabold ">Stripe</a>
             <div class="hidden md:flex space-x-5 text-base font-bold ">
@@ -21,30 +21,64 @@
                 <a href="" class="p-4">Pricing</a>
 
             </div>
-            <div class="bg-white py-1 px-3 rounded-3xl bg-opacity-10">
+            <!-- menu icon -->
+            <div class="bg-white py-1 px-3 rounded-3xl bg-opacity-10 md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
               </svg>
             </div>
+            <div class="bg-white py-1 hidden px-6 rounded-3xl text-base bg-opacity-10 md:flex hover:cursor-pointer hover:bg-opacity-40 font-bold">
+                <a href="#">Sign In</a>
+
+            </div>
+
 
         </nav>
-        <!-- <div class=" bg-gradient-to-r from-yellow via-pink to-indigo h-56   -rotate-12 scale-125  bottom-0  transform "></div> -->
+        <!-- <div class=" bg-gradient-to-r from-yellow via-pink to-indigo h-56 -rotate-12 scale-125 bottom-0 transform "></div> -->
         <!-- hero section -->
-        <div class="mx-auto container w-10/12 skew-y-12 relative transform my-80 ">
-            <div class="flex items-start  flex-col space-y-10 md:w-1/2">
-                <h1 class="text-5xl md:text-7xl   font-bold text-darkblue ">
+        <div class="mx-auto container w-10/12 skew-y-12 transform my-80 relative ">
+            <div class="flex items-start flex-col space-y-10 md:w-3/4 ">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-darkblue text-opacity-80 ">
                     Financial <br>infrastructure <br>for the internet
 
 
                 </h1>
-                <p class=" leading-normal text-gray font-normal text-xl">
+                <p class=" leading-normal text-darkblue text-opacity-80 font-normal text-xl md:w-1/2 ">
                     Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.
                 </p>
                 <div class="flex space-x-5 items-center my-10 ">
-                    <a href="#" class="text-white text-center text-sm font-bold bg-darkblue px-6 py-2 rounded-full">start now </a>
-                    <a href="#" class="text-darkblue font-bold">contact sales </a>
+                    <a href="# " class="text-white text-center text-sm font-bold bg-darkblue px-6 py-2 rounded-full  hover:bg-opacity-50 ">start now </a>
+                    <a href="# " class="text-darkblue font-bold hover:text-opacity-50 ">contact sales </a>
                 </div>
             </div>
+            <!-- hero section images  -->
+
+
+            <!-- transparent div section  -->
+            <div class="absolute top-0 -right-80 w-1/2 hidden md:flex ">
+                <div class="bg-white bg-opacity-30 rounded-xl py-5 px-10 shadow-2xl flex relative transform scale-150 ">
+                    <div class="flex flex-col w-full ">
+                        <div class="transform-none ">
+                            <p class="text-white font-bold text-sm ">ROCKET RIDES</p>
+                        </div>
+
+                        <div class="bg-white w-1/4 rounded-xl absolute -left-0 -bottom-6 scale-x-125 scale-y-110 transform shadow-2xl shadow-black overflow-hidden ">
+
+                            <img src="img/phonee.PNG " alt="object-contain ">
+                        </div>
+                    </div>
+                    <!-- section 2 -->
+                    <div class="flex flex-col space-y-5 ">
+                        <img src="img/search.PNG " alt=" ">
+                        <div class="flex flex-col space-y-10 ">
+                            <img src="img/summary.png " alt=" ">
+                            <img src="img/summary2.png " alt=" ">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
 
 
@@ -53,70 +87,70 @@
     </div>
 
     <!-- logos -->
-    <div class=" grid grid-cols-2 place-items-center gap-y-16 my-32 md:mx-auto md:w-10/12  md:grid-cols-4 md:gap-y-20">
-        <img src="img/logo1.svg" alt="" class="w-3/5 md:w-4/6">
-        <img src="img/logo2.svg" alt="" class="w-3/5 md:w-4/6 ">
-        <img src="img/logo3.svg" alt="" class="w-3/5 md:w-4/6 ">
-        <img src="img/logo4.svg" alt="" class="w-3/5 md:w-4/6 ">
-        <img src="img/logo5.svg" alt="" class="w-3/5 md:w-4/6 ">
-        <img src="img/logo6.svg" alt="" class="w-3/5 md:w-4/6 ">
-        <img src="img/logo7.svg" alt="" class="w-3/5 md:w-4/6 ">
-        <img src="img/logo8.svg" alt="" class="w-3/5 md:w-4/6 ">
+    <div class=" grid grid-cols-2 place-items-center gap-y-16 my-32 md:mx-auto md:w-10/12 md:grid-cols-4 md:gap-y-20 ">
+        <img src="img/logo1.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo2.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo3.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo4.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo5.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo6.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo7.svg " alt=" " class="w-3/5 md:w-4/6 ">
+        <img src="img/logo8.svg " alt=" " class="w-3/5 md:w-4/6 ">
     </div>
     <!-- content paragraphs -->
-    <div class=" mt-32  w-10/12 mx-auto py-10 md:py-0 md:flex items-center">
-        <div class="space-y-4 md:space-y-6 md:w-1/2 md:pr-20 md:pl-10">
-            <h2 class="text-indigo font-bold text-xl">Unified platform</h2>
-            <h1 class="text-darkblue font-bold text-3xl leading-10">A fully integrated <br>suite of payments products</h1>
-            <p class="text-gray text-lg font-medium">We bring together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for <span class="text-indigo">online and in-person retailers, subscriptions businesses, software platforms and marketplaces,</span>                and everything in between.</p>
-            <div class="hidden md:flex">
-                <a href="#" class="bg-indigo   py-1 px-6 text-sm text-white font-bold rounded-full">Start with payment</a>
+    <div class=" mt-32 w-10/12 mx-auto py-10 md:py-0 md:flex items-center ">
+        <div class="space-y-4 md:space-y-6 md:w-1/2 md:pr-20 md:pl-10 ">
+            <h2 class="text-indigo font-bold text-xl ">Unified platform</h2>
+            <h1 class="text-darkblue font-bold text-3xl leading-10 ">A fully integrated <br>suite of payments products</h1>
+            <p class="text-gray text-lg font-medium ">We bring together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for <span class="text-indigo ">online and in-person retailers, subscriptions businesses, software platforms and marketplaces,</span>                and everything in between.</p>
+            <div class="hidden md:flex ">
+                <a href="# " class="bg-indigo py-1 px-6 text-sm text-white font-bold rounded-full hover:bg-darkblue ">Start with payment</a>
             </div>
         </div>
-        <div class="mt-5  text-lg md:w-1/2 md:pr-32 md:pl-10 ">
-            <p class="text-gray">We also help <span class="text-indigo"> companies beat fraud, send invoices, issue virtual and physical cards, reduce friction at checkout, get financing, manage business spend,</span> and much more.</p>
+        <div class="mt-5 text-lg md:w-1/2 md:pr-32 md:pl-10 ">
+            <p class="text-gray ">We also help <span class="text-indigo "> companies beat fraud, send invoices, issue virtual and physical cards, reduce friction at checkout, get financing, manage business spend,</span> and much more.</p>
         </div>
-        <div class="flex md:hidden my-10">
-            <a href="#" class="bg-indigo text-sm  py-1 px-6  text-white font-bold rounded-full">Start with payment</a>
+        <div class="flex md:hidden my-10 ">
+            <a href="# " class="bg-indigo text-sm py-1 px-6 text-white font-bold rounded-full ">Start with payment</a>
         </div>
 
 
         <!-- pictures -->
         <!-- <div class="grid grid-cols-2 w-screen ">
-            <div class="flex flex-col">
-                <img src="img/visa.png" alt="" class="object-contain w-auto">
-                <img src="img/phonepay.png" alt="">
+            <div class="flex flex-col ">
+                <img src="img/visa.png " alt=" " class="object-contain w-auto ">
+                <img src="img/phonepay.png " alt=" ">
             </div>
             <div class="flex flex-col ">
-                <div class="flex items-end">
-                    <img src="img/slack.png" alt="">
-                    <img src="img/phone.png" alt="w-auto">
+                <div class="flex items-end ">
+                    <img src="img/slack.png " alt=" ">
+                    <img src="img/phone.png " alt="w-auto ">
                 </div>
-                <img src="img/dashboard.png" alt="">
+                <img src="img/dashboard.png " alt=" ">
             </div>
 
         </div> -->
 
     </div>
-    <div class=" mb-5 md:mb-0 md:mx-auto  md:w-10/12    ">
+    <div class=" mb-5 md:mb-0 md:mx-auto md:w-10/12 ">
 
         <!-- pictures -->
-        <div class=" flex">
+        <div class=" flex ">
             <div class="flex flex-col ">
-                <img src="img/visa.png" alt="" class="object-contain w-auto">
-                <img src="img/phone2.png" alt="">
+                <img src="img/visa.png " alt=" " class="object-contain w-auto ">
+                <img src="img/phone2.png " alt=" ">
             </div>
             <div class="flex flex-col ">
-                <div class="flex relative">
-                    <div class="md:w-1/2">
-                        <img src="img/slack.png" alt="" class="md:max-w-lg">
+                <div class="flex relative ">
+                    <div class="md:w-1/2 ">
+                        <img src="img/slack.png " alt=" " class="md:max-w-lg ">
                     </div>
-                    <div class="w-4/12 absolute bottom-0  right-0">
-                        <img src="img/phone.png" alt="" class="  ">
+                    <div class="w-4/12 absolute bottom-0 right-0 ">
+                        <img src="img/phone.png " alt=" " class=" ">
                     </div>
                 </div>
                 <div>
-                    <img src="img/dashboard.png" alt="">
+                    <img src="img/dashboard.png " alt=" ">
                 </div>
             </div>
 
@@ -124,40 +158,40 @@
 
     </div>
     <div class="w-full h-auto py-28 bg-darkblue -skew-y-6 transform space-y-5 flex justify-center items-center flex-col md:flex-row relative md:px-32 ">
-        <div class="md:flex flex-col  pr-10">
+        <div class="md:flex flex-col pr-10 ">
             <div class="transform skew-y-6 mx-auto w-10/12 space-y-5 ">
-                <p class="text-lg font-bold text-indigo">Designed for developers </p>
-                <h1 class="text-4xl font-bold text-white">The world’s most powerful and easy-to-use APIs</h1>
+                <p class="text-lg font-bold text-indigo ">Designed for developers </p>
+                <h1 class="text-4xl font-bold text-white ">The world’s most powerful and easy-to-use APIs</h1>
                 <p class="font-medium text-base text-gray ">We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.</p>
-                <div> <a href="#" class="py-2 px-4 bg-lightblue rounded-full mx-auto text-sm ">Read the docs</a></div>
+                <div> <a href="# " class="py-2 px-4 bg-lightblue rounded-full mx-auto text-sm hover:bg-white  ">Read the docs</a></div>
 
             </div>
             <!-- gif contents  -->
-            <div class="transform skew-y-6 mx-auto w-10/12 space-y-5">
+            <div class="transform skew-y-6 mx-auto w-10/12 space-y-5 ">
                 <!-- first title -->
 
                 <div class=" ">
-                    <img src="img/icon1.svg" alt="">
-                    <h2 class="text-white font-bold text-sm mb-3">Tools for every stack</h2>
-                    <p class="font-normal text-base text-gray  mb-3">We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
-                    <div class=" mb-3">
-                        <a href="#" class="text-lightblue font-semibold text-sm">See libraries </a>
+                    <img src="img/icon1.svg " alt=" ">
+                    <h2 class="text-white font-bold text-sm mb-3 ">Tools for every stack</h2>
+                    <p class="font-normal text-base text-gray mb-3 ">We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
+                    <div class=" mb-3 ">
+                        <a href="# " class="text-lightblue font-semibold text-sm ">See libraries </a>
                     </div>
 
                 </div>
                 <!-- second title  -->
                 <div class=" ">
-                    <img src="img/icon2.svg" alt="">
-                    <h2 class="text-white font-bold text-sm mb-3">Prebuilt integrations</h2>
-                    <p class="font-normal text-base text-gray  mb-3">Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.</p>
-                    <div class=" mb-3">
-                        <a href="#" class="text-lightblue font-semibold text-sm">Explore partners  </a>
+                    <img src="img/icon2.svg " alt=" ">
+                    <h2 class="text-white font-bold text-sm mb-3 ">Prebuilt integrations</h2>
+                    <p class="font-normal text-base text-gray mb-3 ">Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.</p>
+                    <div class=" mb-3 ">
+                        <a href="# " class="text-lightblue font-semibold text-sm ">Explore partners  </a>
                     </div>
                     <!-- images -->
-                    <div class="md:hidden flex flex-col">
-                        <img src="img/codess.PNG" alt="" class="">
-                        <img src="img/server.PNG" alt="" class="">
-                        <img src="img/codes2.PNG" alt="" class="">
+                    <div class="md:hidden flex flex-col ">
+                        <img src="img/codess.PNG " alt=" " class=" ">
+                        <img src="img/server.PNG " alt=" " class=" ">
+                        <img src="img/codes2.PNG " alt=" " class=" ">
 
                     </div>
 
@@ -168,15 +202,15 @@
 
         </div>
         <!-- images -->
-        <div class="md:flex hidden flex-col skew-y-6 transform">
-            <img src="img/codess.PNG" alt="" class="object-contain">
-            <img src="img/server.PNG" alt="" class="object-contain">
-            <img src="img/codes2.PNG" alt="" class="object-contain">
+        <div class="md:flex hidden flex-col skew-y-6 transform ">
+            <img src="img/codess.PNG " alt=" " class="object-contain ">
+            <img src="img/server.PNG " alt=" " class="object-contain ">
+            <img src="img/codes2.PNG " alt=" " class="object-contain ">
 
         </div>
-        <!-- <div class="bg-indigo w-1/2 h-28 absolute -bottom-16 right-0"> -->
-        <div class="w-20 h-10 md:w-1/5 bg-lightblue bg-opacity-60 absolute -bottom-10 right-0"></div>
-        <div class="w-5 h-10 md:w-1/12 bg-indigo bg-opacity-60 bg-transparent absolute -bottom-16 right-0"></div>
+        <!-- <div class="bg-indigo w-1/2 h-28 absolute -bottom-16 right-0 "> -->
+        <div class="w-20 h-10 md:w-1/5 bg-lightblue bg-opacity-60 absolute -bottom-10 right-0 "></div>
+        <div class="w-5 h-10 md:w-1/12 bg-indigo bg-opacity-60 bg-transparent absolute -bottom-16 right-0 "></div>
         <!-- 
             </div> -->
 
@@ -184,54 +218,38 @@
 
 
     </div>
-    <div class="w-10/12 mx-auto my-32 md:my-10 md:px-10 md:py-28">
-        <div class="space-y-5">
-            <p class="font-bold text-lg md:text-2xl text-indigo">Why Stripe</p>
-            <h1 class="font-bold text-2xl md:text-3xl text-darkblue md:w-3/5">A technology-first approach to payments and finance</h1>
+    <div class="w-10/12 mx-auto my-32 md:mt-10 md:mb-20 md:px-10 md:py-28 ">
+        <div class="space-y-5 ">
+            <p class="font-bold text-lg md:text-2xl text-indigo ">Why Stripe</p>
+            <h1 class="font-bold text-2xl md:text-3xl text-darkblue md:w-3/5 ">A technology-first approach to payments and finance</h1>
             <div class="md:grid grid-cols-4 gap-5 ">
 
-                <div class="space-y-3">
+                <div class="space-y-3 ">
                     <!-- div icon -->
-                    <div class="w-8 h-8 rounded-full bg-lightblue bg-opacity-60 flex items-center justify-center">
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                    </div>
-                    <h1 class="font-bold text-sm md:text-base text-darkblue">Close to the metal</h1>
-                    <p class="text-gray  text-sm  md:text-base">From <span class="text-indigo">direct integrations </span> with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.</p>
+                    <img src="img/material.svg " alt=" ">
+                    <h1 class="font-bold text-sm md:text-base text-darkblue ">Close to the metal</h1>
+                    <p class="text-gray text-sm md:text-base ">From <span class="text-indigo ">direct integrations </span> with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.</p>
                 </div>
 
-                <div class="space-y-3">
+                <div class="space-y-3 ">
                     <!-- div icon -->
-                    <div class="w-8 h-8 rounded-full bg-lightblue bg-opacity-60 flex items-center justify-center">
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                    </div>
-                    <h1 class="font-bold text-sm md:text-base text-darkblue">Fastest-improving platform</h1>
-                    <p class="text-gray md:text-base text-sm">We release <span class="text-indigo">hundreds of features </span> and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)</p>
+                    <img src="img/doublePause.svg " alt=" ">
+                    <h1 class="font-bold text-sm md:text-base text-darkblue ">Fastest-improving platform</h1>
+                    <p class="text-gray md:text-base text-sm ">We release <span class="text-indigo ">hundreds of features </span> and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)</p>
                 </div>
                 <!-- title 3 -->
-                <div class="space-y-3">
+                <div class="space-y-3 ">
                     <!-- div icon -->
-                    <div class="w-8 h-8 rounded-full bg-lightblue bg-opacity-60 flex items-center justify-center">
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                    </div>
-                    <h1 class="font-bold text-sm md:text-base text-darkblue">Battle-tested reliability</h1>
-                    <p class="text-gray text-sm md:text-base">Our systems operate with <span class="text-indigo"> 99.99%+ </span>uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.</p>
+                    <img src="img/test.svg " alt=" ">
+                    <h1 class="font-bold text-sm md:text-base text-darkblue ">Battle-tested reliability</h1>
+                    <p class="text-gray text-sm md:text-base ">Our systems operate with <span class="text-indigo "> 99.99%+ </span>uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.</p>
                 </div>
                 <!-- title 4 -->
-                <div class="space-y-3">
+                <div class="space-y-3 ">
                     <!-- div icon -->
-                    <div class="w-8 h-8 rounded-full bg-lightblue bg-opacity-60 flex items-center justify-center">
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                        <div class="w-3 h-3 rounded-full bg-indigo bg-opacity-60"></div>
-                    </div>
-                    <h1 class="font-bold text-sm md:text-base text-darkblue">Intelligent optimizations</h1>
-                    <p class="text-gray md:text-base text-sm">Our machine learning models train on <span class="text-indigo"> billions </span> of data points and help increase revenue across conversion, fraud, revenue recovery, and more.</p>
+                    <img src="img/machine.svg " alt=" ">
+                    <h1 class="font-bold text-sm md:text-base text-darkblue ">Intelligent optimizations</h1>
+                    <p class="text-gray md:text-base text-sm ">Our machine learning models train on <span class="text-indigo "> billions </span> of data points and help increase revenue across conversion, fraud, revenue recovery, and more.</p>
                 </div>
             </div>
 
@@ -241,41 +259,45 @@
     </div>
 
 
-    <div class="h-auto w-full bg-darkblue relative mb-5 -z-0 pb-32  md:pb-48">
-        <div class="h-28 w-full bg-darkblue -skew-y-6  transform absolute -top-10 -z-1 md:-top-20 md:h-40 "> </div>
-        <div class="absolute right-0">
-            <img src="img/planet.png" alt="" class="">
+    <div class="h-auto w-full bg-darkblue relative mb-5 -z-0 pb-32 md:pb-48 ">
+        <div class="h-28 w-full bg-darkblue -skew-y-6 transform absolute -top-10 -z-1 md:-top-20 md:h-40 ">
+            <div class="w-10 h-10 md:w-1/12 bg-lightblue bg-opacity-60 absolute -top-16 "></div>
+            <div class="w-20 h-10 md:w-1/5 bg-indigo bg-opacity-60 bg-transparent absolute -top-10 "></div>
+
+        </div>
+        <div class="absolute right-0 ">
+            <img src="img/planet.png " alt=" " class="w-full h-full ">
         </div>
         <div class="relative mx-auto w-11/12 py-10 space-y-5 md:px-32 md:w-1/2 md:mx-0 ">
-            <p class="text-lightblue font-semibold z-10  text-lg md:text-2xl">
+            <p class="text-lightblue font-semibold z-10 text-lg md:text-2xl ">
                 Global scale</p>
-            <h1 class="text-white font-bold text-3xl z-10 md:text-4xl">The backbone for internet business</h1>
-            <p class="text-gray text-sm md:text-lg">For ambitious companies around the world, Stripe makes moving money as simple, borderless, and programmable as the rest of the internet. Our teams are based in dozens of offices around the world and we process hundreds of billions of dollars
-                each year for <span class="text-lightblue">startups to Fortune 500s. </span> </p>
+            <h1 class="text-white font-bold text-3xl z-10 md:text-4xl ">The backbone for internet business</h1>
+            <p class="text-gray text-sm md:text-lg ">For ambitious companies around the world, Stripe makes moving money as simple, borderless, and programmable as the rest of the internet. Our teams are based in dozens of offices around the world and we process hundreds of billions of dollars
+                each year for <span class="text-lightblue ">startups to Fortune 500s. </span> </p>
         </div>
         <!-- numbers -->
-        <div class="relative md:grid grid-cols-4 md:gap-5 md:px-32">
+        <div class="relative md:grid grid-cols-4 md:gap-5 md:px-32 ">
             <div class="mx-auto w-11/12 py-3 space-y-2 ">
-                <h1 class="text-white font-extrabold text-2xl">250M+</h1>
-                <p class="text-gray text-sm">API requests per day, peaking at 13,000 requests a second </p>
+                <h1 class="text-white font-extrabold text-2xl ">250M+</h1>
+                <p class="text-gray text-sm ">API requests per day, peaking at 13,000 requests a second </p>
 
             </div>
             <!-- 90 %-->
-            <div class="mx-auto w-11/12 py-3 space-y-2">
-                <h1 class="text-white font-extrabold text-2xl">90%</h1>
-                <p class="text-gray text-sm">of U.S. adults have bought from businesses using Stripe</p>
+            <div class="mx-auto w-11/12 py-3 space-y-2 ">
+                <h1 class="text-white font-extrabold text-2xl ">90%</h1>
+                <p class="text-gray text-sm ">of U.S. adults have bought from businesses using Stripe</p>
 
             </div>
             <!-- 135+ -->
-            <div class="mx-auto w-11/12 py-3 space-y-2">
-                <h1 class="text-white font-extrabold text-2xl">135+</h1>
-                <p class="text-gray text-sm">currencies and payment methods supported</p>
+            <div class="mx-auto w-11/12 py-3 space-y-2 ">
+                <h1 class="text-white font-extrabold text-2xl ">135+</h1>
+                <p class="text-gray text-sm ">currencies and payment methods supported</p>
 
             </div>
             <!-- 35+ -->
-            <div class="mx-auto w-11/12 py-3 space-y-2">
-                <h1 class="text-white font-extrabold text-2xl">35+</h1>
-                <p class="text-gray text-sm">countries with local acquiring , optimizing acceptance rates.</p>
+            <div class="mx-auto w-11/12 py-3 space-y-2 ">
+                <h1 class="text-white font-extrabold text-2xl ">35+</h1>
+                <p class="text-gray text-sm ">countries with local acquiring , optimizing acceptance rates.</p>
 
             </div>
         </div>
@@ -284,210 +306,570 @@
 
     </div>
 
-    <div class="mx-auto w-11/12 py-16 space-y-6 md:grid grid-cols-4 gap-5 container md:w-10/12 md:items-start relative">
-        <div class="md:col-span-2 md:px-3 md:w-3/4 md:mx-10 md:space-y-5">
-            <h1 class="text-darkblue text-xl font-semibold md:text-3xl">Ready to get started?</h1>
-            <p class="text-gray text-sm md:text-lg">Explore <span class="text-indigo"> Stripe Payments </span>, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business.</p>
+    <div class="mx-auto w-11/12 pt-5 pb-16 space-y-6 md:flex flex-row gap-5 container md:w-10/12 md:items-end relative ">
+        <div class="md:flex-shrink md:px-3 md:w-3/4 md:mx-10 md:space-y-5 ">
+            <h1 class="text-darkblue text-xl font-semibold md:text-3xl ">Ready to get started?</h1>
+            <p class="text-gray text-sm md:text-lg ">Explore <span class="text-indigo "> Stripe Payments </span>, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business.</p>
 
             <div class="flex space-x-5 items-center ">
-                <a href="#" class="text-white text-center text-sm md:text-base font-bold bg-indigo px-6 py-1 rounded-full">start now </a>
-                <a href="#" class="  text-indigo font-bold md:text-base">contact sales </a>
+                <a href="# " class="text-white text-center text-sm md:text-base font-bold bg-indigo px-6 py-1 rounded-full hover:bg-darkblue ">start now </a>
+                <a href="# " class=" text-indigo font-bold md:text-base hover:text-darkblue">contact sales </a>
             </div>
         </div>
         <!-- titles -->
 
-        <div class="py-3 space-y-2 md:space-y-4">
+        <div class="py-3 space-y-2 md:space-y-4 ">
             <!-- icons -->
-            <div class="bg-gradient-to-tr from-indigo to-lightblue w-6 h-8 rounded-lg  "></div>
-            <h1 class="text-darkblue text-sm font-semibold md:text-base">Always know what you pay</h1>
-            <p class="text-gray text-sm md:text-base">Integrated per-transaction pricing with no hidden fees.</p>
-            <div class="text-indigo text-sm">
-                <a href="">Pricing details </a>
+            <!-- <div class="bg-gradient-to-tr from-indigo to-lightblue w-6 h-8 rounded-lg "></div> -->
+            <img src="img/pricing (1).svg " alt=" ">
+            <h1 class="text-darkblue text-sm font-semibold md:text-base ">Always know what you pay</h1>
+            <p class="text-gray text-sm md:text-base ">Integrated per-transaction pricing with no hidden fees.</p>
+            <div class="text-indigo text-sm ">
+                <a href=" ">Pricing details </a>
             </div>
 
 
         </div>
         <!-- title 2 -->
-        <div class="py-3 space-y-2 md:space-y-4">
+        <div class="py-3 space-y-2 md:space-y-4 ">
             <!-- icons -->
-            <div class="bg-gradient-to-tr from-indigo to-lightblue w-6 h-8 rounded-lg  "></div>
-            <h1 class="text-darkblue text-sm font-semibold md:text-base">Start your integration</h1>
-            <p class="text-gray text-sm md:text-base">Get up and running with Stripe in as little as 10 minutes.</p>
-            <div class="text-indigo text-sm md:text-base">
-                <a href="">API reference </a>
+            <!-- <div class="bg-gradient-to-tr from-indigo to-lightblue w-6 h-8 rounded-lg "></div> -->
+            <img src="img/code-mark.svg " alt=" ">
+            <h1 class="text-darkblue text-sm font-semibold md:text-base ">Start your integration</h1>
+            <p class="text-gray text-sm md:text-base ">Get up and running with Stripe in as little as 10 minutes.</p>
+            <div class="text-indigo text-sm md:text-base ">
+                <a href=" ">API reference </a>
             </div>
 
 
         </div>
-        <div class="z-10 absolute -bottom-16 md:bottom-5 right-11 md:right-20 transform -skew-y-6 ">
+        <!-- <div class="z-10 absolute -bottom-16 md:bottom-5 right-11 md:right-16 transform -skew-y-6 ">
 
 
-            <div class="absolute -right-16 md:-right-40 bg-lightblue bg-opacity-90 bg-transparent h-8 md:w-48 w-32 z-10"></div>
+            <div class="absolute -right-16 md:-right-40 bg-lightblue bg-opacity-90 bg-transparent h-8 md:w-48 w-32 z-10 "></div>
             <div class=" bottom-0 -right-16 md:-right-40 md:-bottom-3 z-10 bg-indigo bg-transparent h-8 absolute md:w-16 w-8 "></div>
-        </div>
+        </div> -->
 
 
     </div>
 
-    <footer class="h-auto w-full bg-light relative mb-5 -z-0 pb-32 mt-32 ">
+    <footer class="h-auto w-full bg-light relative mb-5 -z-0 pb-5 mt-32 ">
 
-        <div class="h-28 w-full  -skew-y-6 transform absolute  -z-1 -top-10 md:-top-20 md:h-48 bg-light ">
+        <div class="h-28 w-full -skew-y-6 transform absolute -z-1 -top-10 md:-top-20 md:h-48 bg-light ">
             <!-- div of colors -->
             <div class="flex justify-between absolute ">
-                <div class="z-10 absolute -top-16">
-                    <div class="absolute bg-lightblue bg-opacity-90 bg-transparent h-10 md:w-10 w-4 z-10"></div>
-                    <div class="-bottom-16  bg-indigo bg-transparent h-8 absolute w-16 md:w-32"></div>
+                <div class="z-10 absolute -top-16 ">
+                    <div class="absolute bg-lightblue bg-opacity-60 bg-transparent h-10 md:w-10 w-4 z-10 "></div>
+                    <div class="-bottom-16 bg-indigo bg-opacity-60 bg-transparent h-8 absolute w-16 md:w-32 "></div>
 
                 </div>
 
                 <!--
             <div>
-                <div class="w-20 h-10 bg-lightblue bg-opacity-60 absolute -bottom-10 right-0"></div>
-                <div class="w-5 h-10 bg-indigo bg-opacity-90 bg-transparent absolute -bottom-16 right-0"></div>
+                <div class="w-20 h-10 bg-lightblue bg-opacity-60 absolute -bottom-10 right-0 "></div>
+                <div class="w-5 h-10 bg-indigo bg-opacity-90 bg-transparent absolute -bottom-16 right-0 "></div>
             </div> -->
 
             </div>
+            <div class="w-4 h-10 md:w-10 bg-lightblue bg-opacity-60 absolute -top-16 right-0 "></div>
+            <div class="w-16 h-8 md:w-32 bg-indigo bg-opacity-60 bg-transparent absolute right-0 -top-8 "></div>
+
 
         </div>
         <!-- footer content -->
-        <div class="flex flex-col">
-            <!-- footer title -->
-            <div class="relative py-10 mx-auto w-11/12 text-darkblue space-y-3">
-                <h1 class="text-darkblue text-2xl font-extrabold">Stripe</h1>
-                <div class="text-sm space-y-1">
-                    <p class="">
-                        Unites states</p>
-                    <p>
-
-                        English (Unites states)</p>
-                </div>
-                <p class="text-sm">© 2022 Stripe, Inc.</p>
-
+        <nav class="grid grid-cols-2 py-20 sm:grid-cols-4 relative md:place-items-center mx-10 md:mx-0 md:items-start text-darkblue text-medium ">
+            <!-- Stripe -->
+            <div class="flex flex-col col-span-2 gap-4 sm:col-span-1 sm:justify-between ">
+                <div class="space-y-4 ">
+                    <h1>
+                        <a href="/# " class="flex text-darkblue hover:text-opacity-75 text-4xl font-extrabold ">Stripe</a
+                  >
+                </h1>
+                <button
+                  class="flex items-center space-x-2 font-light leading-6 tracking-normal text-medium text-darkblue "
+                >
+                  <i class="fa-sharp fa-solid fa-paper-plane "></i>
+                  <span>United States</span>
+                </button>
+                <button
+                  class="flex items-center space-x-2 font-light leading-6 tracking-normal "
+                >
+                  <i class="fa-sharp fa-solid fa-comment "></i>
+                  <!-- <i class="fa-sharp fa-solid fa-comment "></i> -->
+                  <span>English(United States)</span>
+                </button>
+              </div>
+              <ul class=" ">
+                <li
+                  class="my-4 font-light leading-6 tracking-normal text-15Sz hover:opacity-60 "
+                >
+                  © 2022 Stripe, Inc.
+                </li>
+              </ul>
             </div>
-            <!-- links -->
-            <div class="py-10 mx-auto w-11/12 text-darkblue space-y-3 text-sm">
-                <!-- grid div -->
-                <div class="grid grid-cols-2 place-items-center md:place-content-evenly items-start">
-                    <!-- Products & resources-->
-                    <div class="flex flex-col space-y-5 md:grid md:grid-cols-2">
-                        <!-- products  -->
-                        <div class="flex flex-col space-y-5">
-                            <h1 class="font-bold text-darkblue">Products</h1>
-                            <ul class="flex flex-col space-y-2 ">
-
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Atlas</a></li>
-                                <li> <a href="#">Billing</a></li>
-                                <li> <a href="#">Capital</a></li>
-                                <li> <a href="#">checkout</a></li>
-                                <li> <a href="#">climate</a></li>
-                                <li> <a href="#">connect</a></li>
-                                <li> <a href="#">corporate Card</a></li>
-                                <li> <a href="#">Data Pipeline</a></li>
-                                <li> <a href="#">Elements</a></li>
-                                <li><a href="#">Financial Connections</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li><a href="#">identity</a></li>
-                                <li> <a href="#">identity</a></li>
-                                <li> <a href="#">identity</a></li>
-                                <li> <a href="#">identity</a></li>
-                                <li> <a href="#">identity</a></li>
-                                <li> <a href="#">identity</a></li>
-                                <li> <a href="#">identity</a></li>
-
-                            </ul>
-                        </div>
-                        <!-- Resources -->
-                        <div class="flex flex-col space-y-5">
-                            <h1 class="font-bold text-darkblue"> Resources</h1>
-                            <ul class="flex flex-col space-y-2 ">
-                                <li><a href="#">Support Center</a></li>
-                                <li><a href="#">   Guides </a></li>
-                                <li><a href="#">Customer Stories</a></li>
-                                <li><a href="#"> Blog</a></li>
-                                <li><a href="#"> Annual Conference</a></li>
-                                <li><a href="#">Privacy & Terms</a></li>
-                                <li><a href="#"> Licenses</a></li>
-                                <li><a href="#"> COVID-19</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                                <li><a href="#">Cookie</a></li>
-                                <li><a href="#">settings</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- other lists -->
-                    <div class="flex flex-col space-y-8 md:grid grid-cols-2">
-                        <!-- use cases -->
-                        <div class="flex flex-col space-y-5">
-                            <h1 class="font-bold text-darkblue">Use Cases</h1>
-                            <ul class="flex flex-col space-y-2 ">
-
-                                <li> <a href="#">Ecommerce</a></li>
-                                <li> <a href="#">SaaS</a></li>
-                                <li><a href="#">Marketplaces</a></li>
-                                <li> <a href="#">Embedded Finance</a></li>
-                                <li><a href="#">Platforms</a></li>
-                                <li> <a href="#">Creator Economy</a></li>
-                                <li> <a href="#">Crypto</a></li>
-                                <li> <a href="#">Global Businesses</a></li>
-
-                            </ul>
-                        </div>
-                        <!-- Integrations & custom solutions -->
-                        <div class="flex flex-col space-y-5">
-                            <h1 class="font-bold text-darkblue">Use Cases</h1>
-                            <ul class="flex flex-col space-y-2">
-
-                                <li> <a href="#">Ecommerce</a></li>
-                                <li> <a href="#">SaaS</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-
-                            </ul>
-                        </div>
-                        <!-- developers -->
-                        <div class="flex flex-col space-y-5">
-                            <h1 class="font-bold text-darkblue">Use Cases</h1>
-                            <ul class="flex flex-col space-y-2">
-
-                                <li> <a href="#">Ecommerce</a></li>
-                                <li> <a href="#">SaaS</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-
-                            </ul>
-                        </div>
-                        <!-- company -->
-                        <div class="flex flex-col space-y-5">
-                            <h1 class="font-bold text-darkblue">Use Cases</h1>
-                            <ul class="flex flex-col space-y-2">
-
-                                <li> <a href="#">Ecommerce</a></li>
-                                <li> <a href="#">SaaS</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-                                <li> <a href="#">Marketplaces</a></li>
-
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+            <!-- products -->
+            <div>
+              <h1
+                class="mb-2 font-semibold leading-6 tracking-xs2px "
+              >
+                Products
+              </h1>
+              <ul class=" ">
+                <li class="my-1 ">
+                  <a
+                    href="/# "
+                    class="font-light leading-6 tracking-normal hover:opacity-60 "
+                    >Atlas</a
+                  >
+                </li>
+                <li class="my-1 ">
+                  <a
+                    href="/# "
+                    class="font-light leading-6 tracking-normal>Biling</a>
+                        </li>
+                        <li class="my-1">
+                            <a href="/#" class="font-light leading-6 tracking-normal hover:opacity-60">Atlas</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Billing</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Capital</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Checkout</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Climate</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Connect</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Corporate Card</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Data Pipeline</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Elements</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Financial Connections</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Identity</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Invoicing</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Issuing</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Link</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Payments</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal 
+                    >Payment Links</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal  hover:opacity-60"
+                    >Payouts</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Radar</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Revenue Recognition</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Sigma</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Tax</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Terminal</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="/#"
+                    class="font-light leading-6 tracking-normal hover:opacity-60"
+                    >Treasury</a
+                  >
+                </li>
+              </ul>
             </div>
-        </div>
+            <div class="space-y-10 sm:space-y-5">
+              <div>
+                <h1
+                  class="mb-2 font-semibold leading-6 tracking-xs2px "
+                >
+                  uses cases
+                </h1>
+                <ul class="">
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >E-commerce</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >SaaS</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >marketplaces</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Embedded Finance</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Platforms</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Creator Economy</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Crypto</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Global Businesses</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h1
+                  class="mb-2 font-semibold leading-6  "
+                >
+                  integration& custom Solutions
+                </h1>
+                <ul class="">
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >App Marketplace</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal 
+                      >Partner Ecosystem</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Professional Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h1
+                  class="mb-2 font-semibold leading-6 tracking-xs2px "
+                >
+                  Developers
+                </h1>
+                <ul class="">
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Documentation</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >API Reference</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >API Status</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >API Changelog</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Build a Stripe App</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 col-span-2 sm:grid-cols-1 sm:col-span-1 sm:gap-5"
+            >
+              <div>
+                <h1
+                  class="mb-2 font-semibold leading-6 tracking-xs2px "
+                >
+                  Resources
+                </h1>
+                <ul class="">
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal  hover:opacity-60"
+                      >Support Center</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Support Plans</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Guides</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Customer Stories</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Annual Conference</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Privacy & Terms</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Licenses</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >COVID-19</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Sitemap</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Cookie settings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h1
+                  class="mb-2 font-semibold leading-6 tracking-xs2px "
+                >
+                  Company
+                </h1>
+                <ul class="">
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Jobs</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Newsroom</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Stripe Press</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >Become a Partner</a
+                    >
+                  </li>
+                  <li class="my-1">
+                    <a
+                      href="/#"
+                      class="font-light leading-6 tracking-normal hover:opacity-60"
+                      >SaaS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </footer>
 
